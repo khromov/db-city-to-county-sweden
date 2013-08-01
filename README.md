@@ -11,7 +11,7 @@ En hjälpklass i PHP ingår.
 
 #### Användning av hjälpklassen.
 
-Klassen tar fyra argument när man skapar den, som motsvarar PDO-argumenten $dsn, $username, $password, $driver_options
+Klassen tar fyra argument när man skapar den, som motsvarar PDO-argumenten $dsn, $username, $password, $driver_options  
 Klassen exponerar funktionen city_to_county(). Denna tar två argument, en stad och ett default-värde som returneras om staden inte kunde mappas till ett län.
 
 ##### Exempel
