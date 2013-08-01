@@ -14,7 +14,7 @@ class CityStateMapper
 	public function city_to_county($city, $default_if_no_value_found = 'Ospecificerat')
 	{
 		$prepared_query = $this->pdo->prepare('SELECT * FROM city, state WHERE city_name=:city AND city.city_state_id=state.state_id LIMIT 1');
-		$prepared_query->bindParam(':city', $city); //Trim whitespace, just because it feels so nice!
+		$prepared_query->bindParam(':city', $city);
 		$prepared_query->execute();
 		
 		$ret = $prepared_query->fetchAll(PDO::FETCH_ASSOC);
