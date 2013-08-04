@@ -19,7 +19,7 @@ Klassen exponerar funktionen city_to_county(). Denna tar två argument, en stad 
 include('CityStateMapper.class.php');
 $mapper = new CityStateMapper('mysql:host=localhost;dbname=city_state_sweden;charset=utf8', 'username', 'password');
 
-echo $mapper->city_to_county('Göteborg'');
+echo $mapper->city_to_county('Göteborg');
 ```
 
 Resultat
