@@ -30,7 +30,7 @@ Västra Götalands Län
 ##### Exempel med stad som inte existerar
 
 ```php
-echo $mapper->city_to_county('Morotsstaden', "Län hittades ej");
+echo $mapper->city_to_county('Morotsstaden', 'Län hittades ej');
 ```
 
 Resultat
